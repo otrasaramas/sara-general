@@ -4,7 +4,7 @@
 >
 > **Cómo usarlo:** pégalo como instrucción base / conocimiento del asistente (Codex, GPT personalizado, etc.). La IA debe seguir estas reglas en todo lo que genere.
 >
-> **Estado:** BORRADOR v0.3 · Última actualización: 2026-09-23
+> **Estado:** v1.0 · Última actualización: 2026-09-24
 > Las secciones marcadas con `[POR CONFIRMAR]` se completan en las siguientes rondas.
 
 ---
@@ -151,7 +151,11 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ## 9. Identidad visual *(para dar lineamientos coherentes)*
 
-**Estética general:** minimalista con alma de **collage vintage**. Elegante, sobria, con detalles hechos a mano.
+**Estética general:** minimalista con alma de **collage vintage**, muy *luxury*. Elegante, sobria, con detalles hechos a mano. **La fuerza está en la fotografía**, no en los gráficos ni los vectores: primero la imagen, luego un tratamiento mínimo.
+
+**Recursos gráficos:** muchos **elementos pintados a mano** y fotografía. Los gráficos/vectores se usan poco y de forma muy discreta.
+
+**Motivos recurrentes (sello de Alado):** coronas de laurel, abejas y estrellas (imaginería clásica/heráldica que refuerza el aire de época). `[Sara subirá imágenes de referencia de estos motivos]`
 
 **Logo:** wordmark "Alado" en sans-serif **bold y pesado**, negro. Fuerte, contemporáneo y seguro.
 
@@ -165,7 +169,9 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 **Fotografía:** editorial y pictórica, romántica y natural. Fondos de naturaleza/bosque en verdes apagados, texturas (tul, telas), maquillaje natural rosado. Aire de pintura y de época.
 
-**Brandbook:** no existe uno formal todavía. Guía viva: minimalista + collage vintage.
+**Referencias de estética/nivel (el "vecindario" luxury de Alado):** Johanna Ortiz, Lotto del Sur, Jorge Duque. Marcas de lujo con identidad, oficio y sello propio — nunca lujo genérico "solo caro".
+
+**Brandbook:** no existe uno formal todavía. Guía viva: minimalista + collage vintage + fotografía protagonista.
 
 ---
 
@@ -173,7 +179,16 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 **Canal principal:** Instagram. Web: aladogroup.com.
 **Punto de venta físico:** Tienda Alado — El Retiro, Antioquia, en el parque principal (a 45 min de Medellín).
-**Objetivo actual de marca:** **vender** (impulsar ventas). `[AFINAR: qué línea prioritaria, online vs. tienda, meta puntual]`
+
+**Objetivo actual: VENDER las 3 líneas** (por web y tienda física, ambas).
+- **Alado Bride** → especialmente **vestidos de novia**.
+- **Alado (línea principal)** → **la ropa**.
+- **Alado & Co.** → todo en general, **especialmente el textil hogar**.
+
+**Problema #1 a resolver hoy:** la **web no convierte** y el **mensaje no es claro**. Por eso este cerebro de marca importa: cada texto debe comunicar con claridad qué es Alado, qué se lleva el cliente y por qué vale la pena — sin diluir el tono ni caer en lenguaje comercial.
+
+**Alcance geográfico:** por ahora **solo Colombia**. Lo internacional se maneja de forma manual y con costos altos, así que no es prioridad de comunicación.
+
 **Pilares de contenido:** producto/colección · lo artesanal y el proceso (patrones a mano, artesanos) · la tienda + El Retiro · marca/aspiracional (Colombia, historia, oficio).
 
 ---
@@ -217,4 +232,4 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ---
 
-*Documento en construcción — v0.3. Falta afinar: códigos de color y tipografías exactas, y precisar el objetivo comercial (qué línea/canal priorizar).*
+*v1.0 — documento base completo. Pendientes menores para pulir: códigos hex exactos, nombres de las tipografías, e imágenes de los motivos (coronas de laurel, abejas, estrellas).*

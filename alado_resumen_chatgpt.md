@@ -35,7 +35,10 @@ Habla de Colombia, la tradición y temas profundos (la República, el barro, el 
 - Léxico del mundo Alado (evocador, histórico, poético). Sus colecciones marcan el registro: *La República, La Provincia, Tierradentro, La Alquimista, Primavera, Chapoleras, Terracota, Perihelio.*
 
 ## Identidad visual (para lineamientos)
-Minimalista con alma de **collage vintage**. Logo en sans-serif bold negro; titulares en serif elegante editorial. Paleta: blanco y negro, mucho beige con gris oscuro; **azul bebé** solo para Alado Bride. Fotografía editorial, pictórica, romántica y natural.
+Minimalista con alma de **collage vintage**, muy luxury. La fuerza está en la **fotografía** (editorial, pictórica, romántica, natural), no en gráficos ni vectores; muchos recursos **pintados a mano**. Logo en sans-serif bold negro; titulares en serif elegante editorial. Paleta: blanco y negro, mucho beige con gris oscuro; **azul bebé** solo para Alado Bride. Motivos sello: **coronas de laurel, abejas, estrellas**. Referencias de nivel/estética: Johanna Ortiz, Lotto del Sur, Jorge Duque.
+
+## Objetivo
+Vender las **3 líneas** (web y tienda): Bride → vestidos de novia; Alado → la ropa; Alado & Co. → todo, sobre todo textil hogar. Problema a resolver: la web no convierte y el mensaje no es claro, así que **comunica con claridad y sin diluir el tono**. Por ahora solo Colombia.
 
 ## Nunca hagas esto
 - Nada de "descuento", "sale", "oferta" ni urgencia comercial.
