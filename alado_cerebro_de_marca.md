@@ -4,7 +4,7 @@
 >
 > **Cómo usarlo:** pégalo como instrucción base / conocimiento del asistente (Codex, GPT personalizado, etc.). La IA debe seguir estas reglas en todo lo que genere.
 >
-> **Estado:** v1.1 · Última actualización: 2026-09-24
+> **Estado:** v1.2 · Última actualización: 2026-09-24
 > Las secciones marcadas con `[POR CONFIRMAR]` se completan en las siguientes rondas.
 
 ---
@@ -106,6 +106,30 @@ Línea de **diseño de hogar** desprendida del trabajo artesanal de Alado. Varia
 
 Drivers profundos: **identidad y distinción**, poseer arte único como inversión, y pertenecer a una forma de ver el mundo (culta, con raíces, que valora el oficio).
 
+### Personas de cliente (para decidir qué publicar)
+
+**Persona 1 · La Coleccionista Culta** *(cliente principal de la línea de ropa)*
+Mujeres ~27–55, profesionales de alto nivel (gestoras culturales, artistas, abogadas, médicas, ejecutivas, psicólogas, profesoras, jóvenes con criterio y patrimonio familiar). Buen poder adquisitivo; cargos con vida social (galas, eventos, reuniones). Quieren verse **inteligentes, únicas y diferentes**, no "de marca comercial". Las enamora la historia de cada colección y verse conectadas con sus raíces.
+- *Duda típica:* "Alado no es mainstream, mis seguidores no la conocen." → *se convence con la historia y con verse inteligente y única.*
+- *Cómo llega:* por otra clienta, una amiga, o **la mamá** (la marca pasa de madre a hija).
+- *Qué publicar:* la historia/investigación de cada colección; el oficio y el proceso a mano; la pieza en la vida real (eventos); el "por qué" que la hace distinta.
+
+**Persona 2 · La Novia / Celebración** *(línea Bride)*
+Novias cultas que quieren un vestido **único, hecho para ellas y NO alquilado**; mamás de novia; **familias completas** (novia + papá + mamá + tocado + aretes, con buen precio por el combo); y parejas que se casan distinto (kimonos, camisas, bodas no tradicionales). Valoran el proceso: cita con Alejandro, un dibujo hecho a mano, su gusto, sus medidas, su color.
+- *Qué publicar:* el proceso bespoke con Alejandro; el dibujo a mano; único vs. alquilado; vestidos y detalles terminados; paquetes de familia; celebraciones no tradicionales.
+
+**Persona 3 · La Curadora de Hogar** *(línea Alado & Co.)*
+Arquitectas e interioristas, chefs y dueñas de restaurantes de autor, y **señoras de buen poder adquisitivo que se mudan a vivir a El Retiro / Llanogrande** o tienen finca. Compran objetos únicos y **textil hogar**. Algunas no compran ropa (no tendrían dónde usarla) pero aman el hogar.
+- *Qué publicar:* objetos y textil hogar; la tienda de El Retiro como destino; cómo un objeto Alado transforma un espacio; piezas únicas para "gente única".
+
+**Persona 4 · El Hombre Introducido**
+Hombres de criterio que gustan de lo diferente y lo raro; compran piezas de hombre o **unisex (kimonos, pantalones)**. Casi siempre **llegan a la marca por su pareja**. Coleccionistas de arte y personas de criterio. No son el volumen, pero muestran que Alado hace cosas distintas.
+- *Qué publicar:* piezas masculinas/unisex; Alado para el hombre con criterio; lo raro y lo bien hecho.
+
+**Dinámicas transversales (relaciones, no solo compra):**
+- **Embajadores y amigos de la marca:** amigas de Andrés y Alejo, y creadoras/académicas que **recomiendan y citan a Alado** aunque compren poco. Son comunidad y difusión → activarlos con colaboración, detrás de cámara y contenido de comunidad.
+- **La marca se hereda y se contagia:** de madre a hija, de pareja a pareja, de clienta a amiga. El **voz a voz** es clave.
+
 ---
 
 ## 7. Tono de voz *(base sólida, ya definida)*
@@ -146,6 +170,10 @@ Drivers profundos: **identidad y distinción**, poseer arte único como inversi�
 **Léxico / mundo de palabras de Alado:** el universo verbal de la marca vive en nombres evocadores, históricos y poéticos. Los nombres de sus colecciones son un buen mapa de ese léxico:
 La República · La Provincia · Tierradentro · La Alquimista · Primavera · Chapoleras · Terracota · Perihelio.
 La IA debe moverse en ese registro: palabras que evocan territorio, historia, oficio, naturaleza y lo onírico.
+
+**Cómo nombrar:**
+- A los productos: *piezas · objetos · obras · creaciones*.
+- A los clientes: *comunidad · quienes buscan · coleccionistas*. **No usar** "devotos" ni "amantes del oficio".
 
 ---
 
