@@ -44,7 +44,16 @@ Comandos disponibles:
 📅 *calendario* — Calendario óptimo día por día con horarios
 🎯 *plan [minutos]* — Plan rápido solo para hoy
 🏷 *categorias* — Ver/ajustar prioridad de categorías
-❓ *ayuda* — Ver este menú`;
+❓ *ayuda* — Ver este menú
+
+🎮 *Juego de puntos*
+⭐ *puntos* — Tu avatar: puntos, nivel, racha y meta de hoy
+⚔️ *hice [misión] [🍅]* — Sumar una misión que no estaba en la lista (ej: *hice editar video 2*)
+🛒 *tienda* — Recompensas para gastar tus puntos
+🎁 *canjear [N]* — Gastar puntos en la recompensa N
+➕ *premio [nombre] [costo]* — Agregar una recompensa a la tienda
+🎯 *meta [N]* — Cambiar tu meta diaria de puntos
+📜 *historial* — Últimos movimientos de puntos`;
 
 const CATEGORIES = ["Trabajo", "Personal", "Salud", "Hogar", "Finanzas", "Educación", "Otro"];
 const PRIORITIES = ["Alta", "Media", "Baja"];
@@ -149,6 +158,220 @@ function daysUntil(iso) {
 function fmtPomos(n) {
   if (n == null) return "—";
   return `${n} pomodoro${n === 1 ? "" : "s"}`;
+}
+
+// Fecha local YYYY-MM-DD (según la zona horaria del servidor: configurá TZ, ej: TZ=America/Bogota)
+function localISO(d = new Date()) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function addDaysISO(iso, n) {
+  const d = new Date(iso + "T12:00:00");
+  d.setDate(d.getDate() + n);
+  return localISO(d);
+}
+
+// ─── JUEGO: PUNTOS Y MISIONES ──────────────────────────────────────────────
+// Sos un avatar: cada tarea o misión completada da puntos (10 por 🍅).
+// Cada día hábil hay una meta: si la alcanzás sumás racha, si no, perdés los puntos que faltaron.
+// Los puntos se gastan en la tienda de recompensas. El XP (todo lo ganado) sube tu nivel.
+
+const PUNTOS_POR_POMODORO = 10;
+const META_DIARIA_DEFAULT = 80;  // 8 🍅 de los 12 disponibles por día
+const BONO_RACHA_CADA = 5;       // cada 5 días seguidos cumpliendo la meta...
+const BONO_RACHA = 50;           // ...+50 pts de bono
+const XP_POR_NIVEL = 500;
+const GANANCIAS = ["tarea", "mision"]; // tipos de movimiento que cuentan para la meta diaria
+const KIND_EMOJI = { tarea: "✅", mision: "⚔️", canje: "🎁", castigo: "📉", bono: "🔥" };
+
+const RECOMPENSAS_DEFAULT = [
+  { name: "📱 30 min de redes / scroll", cost: 40 },
+  { name: "📺 Un capítulo de serie", cost: 50 },
+  { name: "🎮 1 hora de ocio sin culpa", cost: 80 },
+  { name: "☕ Antojo o café afuera", cost: 100 },
+  { name: "🛍 Comprarme algo que quiero", cost: 400 }
+];
+
+const pomosToPoints = p => Math.max(1, Math.round(p * PUNTOS_POR_POMODORO));
+const nivel = xp => Math.floor(xp / XP_POR_NIVEL) + 1;
+const isWorkDay = iso => AVAILABILITY.workDays.includes(new Date(iso + "T12:00:00").getDay());
+
+function progressBar(value, goal) {
+  const filled = Math.min(10, Math.floor((value / goal) * 10));
+  return "▰".repeat(filled) + "▱".repeat(10 - filled);
+}
+
+async function logPoints(phone, kind, points, note, day = localISO()) {
+  await supabase.from("point_log").insert({ phone, day, kind, points, note });
+}
+
+async function getPlayer(phone) {
+  const { data } = await supabase.from("players").select("*").eq("phone", phone).maybeSingle();
+  if (data) return data;
+  const { data: created, error } = await supabase
+    .from("players")
+    .insert({ phone, points: 0, xp: 0, streak: 0, best_streak: 0, daily_goal: META_DIARIA_DEFAULT, last_day: localISO() })
+    .select()
+    .single();
+  if (error) throw error;
+  await supabase.from("rewards").insert(RECOMPENSAS_DEFAULT.map(r => ({ phone, ...r })));
+  return created;
+}
+
+// Cierra los días pendientes (desde last_day hasta ayer): racha y bono si se cumplió la meta,
+// castigo si no. Los fines de semana no tienen meta. Devuelve líneas para avisarle al usuario.
+async function settleDays(player) {
+  const today = localISO();
+  if (player.last_day >= today) return [];
+
+  const { data: logs } = await supabase
+    .from("point_log")
+    .select("day, points")
+    .eq("phone", player.phone)
+    .in("kind", GANANCIAS)
+    .gte("day", player.last_day)
+    .lt("day", today);
+  const earnedByDay = {};
+  (logs || []).forEach(l => { earnedByDay[l.day] = (earnedByDay[l.day] || 0) + l.points; });
+
+  const goal = player.daily_goal;
+  let { points, xp, streak, best_streak } = player;
+  const events = [];
+
+  for (let d = player.last_day; d < today; d = addDaysISO(d, 1)) {
+    if (!isWorkDay(d)) continue;
+    const earned = earnedByDay[d] || 0;
+    if (earned >= goal) {
+      streak++;
+      best_streak = Math.max(best_streak, streak);
+      let line = `✅ ${formatDate(d)}: meta cumplida (${earned}/${goal}) · racha ${streak} 🔥`;
+      if (streak % BONO_RACHA_CADA === 0) {
+        points += BONO_RACHA;
+        xp += BONO_RACHA;
+        await logPoints(player.phone, "bono", BONO_RACHA, `Racha de ${streak} días`, d);
+        line += ` · 🎁 +${BONO_RACHA} de bono`;
+      }
+      events.push(line);
+    } else {
+      const lost = Math.min(points, goal - earned);
+      points -= lost;
+      if (lost) await logPoints(player.phone, "castigo", -lost, `Meta no cumplida (${earned}/${goal})`, d);
+      const perdida = lost ? `-${lost} pts` : "no tenías puntos para perder";
+      events.push(`📉 ${formatDate(d)}: no llegaste a la meta (${earned}/${goal}) · ${perdida}${streak ? " · se cortó la racha" : ""}`);
+      streak = 0;
+    }
+  }
+
+  await supabase.from("players").update({ points, xp, streak, best_streak, last_day: today }).eq("phone", player.phone);
+  Object.assign(player, { points, xp, streak, best_streak, last_day: today });
+  return events;
+}
+
+async function loadPlayer(phone) {
+  const player = await getPlayer(phone);
+  const events = await settleDays(player);
+  return { player, events };
+}
+
+// Antepone el resumen de días cerrados (si hay) a la respuesta
+function withEvents(events, body) {
+  if (!events.length) return body;
+  const shown = events.length > 5 ? [...events.slice(-5), `…y ${events.length - 5} día(s) antes`] : events;
+  return `📆 *Días cerrados*\n${shown.join("\n")}\n\n${body}`;
+}
+
+async function earnedToday(phone) {
+  const { data } = await supabase
+    .from("point_log")
+    .select("points")
+    .eq("phone", phone)
+    .eq("day", localISO())
+    .in("kind", GANANCIAS);
+  return (data || []).reduce((s, l) => s + l.points, 0);
+}
+
+async function earnPoints(player, kind, points, note) {
+  const nivelAntes = nivel(player.xp);
+  await logPoints(player.phone, kind, points, note);
+  player.points += points;
+  player.xp += points;
+  await supabase.from("players").update({ points: player.points, xp: player.xp }).eq("phone", player.phone);
+
+  const hoy = await earnedToday(player.phone);
+  const goal = player.daily_goal;
+  let msg = `🪙 *+${points} pts* (tenés ${player.points})`;
+  if (isWorkDay(localISO())) {
+    msg += `\n🎯 Hoy: ${hoy}/${goal} ${progressBar(hoy, goal)}`;
+    if (hoy >= goal && hoy - points < goal) msg += `\n🏆 *¡Meta del día cumplida!*`;
+  } else {
+    msg += `\n🌴 Hoy no hay meta: esto es puro extra.`;
+  }
+  if (nivel(player.xp) > nivelAntes) msg += `\n⬆️ *¡Subiste a nivel ${nivel(player.xp)}!*`;
+  return msg;
+}
+
+async function formatStatus(phone) {
+  const { player, events } = await loadPlayer(phone);
+  const hoy = await earnedToday(phone);
+  const goal = player.daily_goal;
+  const lvl = nivel(player.xp);
+  const faltaNivel = lvl * XP_POR_NIVEL - player.xp;
+
+  let msg = `🎮 *Tu avatar*\n\n`;
+  msg += `⭐ Nivel ${lvl} · ${player.xp} XP (${faltaNivel} para el nivel ${lvl + 1})\n`;
+  msg += `🪙 Puntos para gastar: *${player.points}*\n`;
+  msg += `🔥 Racha: ${player.streak} día(s) (mejor: ${player.best_streak})\n\n`;
+
+  if (isWorkDay(localISO())) {
+    const pct = Math.min(100, Math.round((hoy / goal) * 100));
+    msg += `🎯 *Hoy* (${formatDate(localISO())}): ${hoy}/${goal}\n${progressBar(hoy, goal)} ${pct}%\n`;
+    if (hoy >= goal) {
+      msg += `🏆 ¡Meta cumplida! Lo que sumes ahora es extra.`;
+    } else {
+      const falta = goal - hoy;
+      msg += `Te faltan ${falta} pts (~${fmtPomos(Math.ceil(falta / PUNTOS_POR_POMODORO))}). Si no llegás, al cerrar el día perdés hasta ${falta} pts.`;
+    }
+  } else {
+    msg += `🌴 Hoy es fin de semana: sin meta. Lo que hagas suma extra (${hoy} pts hoy).`;
+  }
+
+  msg += `\n\n*hice [misión] [🍅]* · *listo N* · *tienda* · *historial*`;
+  return withEvents(events, msg);
+}
+
+async function getRewards(phone) {
+  const { data } = await supabase.from("rewards").select("*").eq("phone", phone).order("cost", { ascending: true });
+  return data || [];
+}
+
+async function formatShop(phone) {
+  const { player, events } = await loadPlayer(phone);
+  const rewards = await getRewards(phone);
+  let msg = `🛒 *Tienda de recompensas*\nTenés *${player.points}* 🪙\n\n`;
+  if (!rewards.length) msg += `Todavía no tenés recompensas.\n`;
+  rewards.forEach((r, i) => {
+    const estado = player.points >= r.cost ? "✅" : `🔒 (faltan ${r.cost - player.points})`;
+    msg += `${i + 1}. ${r.name} — *${r.cost}* ${estado}\n`;
+  });
+  msg += `\nCanjeá con *canjear N*.\nAgregá con *premio [nombre] [costo]* (ej: *premio Ir al cine 150*).\nQuitá con *quitar premio N*.`;
+  return withEvents(events, msg);
+}
+
+async function formatHistory(phone) {
+  const { events } = await loadPlayer(phone);
+  const { data } = await supabase
+    .from("point_log")
+    .select("*")
+    .eq("phone", phone)
+    .order("created_at", { ascending: false })
+    .limit(15);
+  if (!data?.length) return withEvents(events, "📜 Todavía no hay movimientos. ¡Completá una misión con *listo N* o *hice ...*!");
+  let msg = `📜 *Últimos movimientos*\n\n`;
+  data.forEach(l => {
+    const signo = l.points > 0 ? `+${l.points}` : `${l.points}`;
+    msg += `${KIND_EMOJI[l.kind] || "•"} ${formatDate(l.day)} · *${signo}* · ${l.note || l.kind}\n`;
+  });
+  return withEvents(events, msg);
 }
 
 // ─── TAREAS ────────────────────────────────────────────────────────────────
@@ -564,7 +787,95 @@ app.post("/webhook", async (req, res) => {
     const task = tasks[n - 1];
     if (!task) return twiReply(res, `No encontré la tarea número ${n}. Escribí *lista* para ver tus tareas.`);
     await supabase.from("tasks").update({ done: true }).eq("id", task.id);
-    return twiReply(res, `✅ *${task.name}* marcada como completada. 💪`);
+    let out = `✅ *${task.name}* marcada como completada. 💪`;
+    try {
+      const { player, events } = await loadPlayer(phone);
+      const pomos = task.pomodoros || task.minutes / POMODORO_WORK;
+      out = withEvents(events, `${out}\n\n${await earnPoints(player, "tarea", pomosToPoints(pomos), task.name)}`);
+    } catch (e) {
+      console.error("Juego:", e.message); // si el juego falla, la tarea igual queda completada
+    }
+    return twiReply(res, out);
+  }
+
+  // ─── Juego de puntos ───
+  const GAME_ERROR = "Error en el juego de puntos 🎮. ¿Ya creaste las tablas de *supabase/juego.sql*?";
+
+  if (["puntos", "estado", "juego", "avatar", "nivel"].includes(cmd)) {
+    try { return twiReply(res, await formatStatus(phone)); }
+    catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (/^(hice|misi[oó]n)(\s|$)/.test(cmd)) {
+    const rest = msg.replace(/^\S+\s*/, "").trim();
+    if (!rest) return twiReply(res, "⚔️ Contame qué hiciste y cuántos 🍅 te tomó. Ej: *hice editar video 2* o *hice plan de la semana 1*");
+    const m = rest.match(/^(.*?)\s+(\d+(?:[.,]\d+)?)\s*(?:🍅|pomodoros?|pomos?)?$/i);
+    const name = (m ? m[1] : rest).slice(0, 200);
+    const pomos = m ? parseFloat(m[2].replace(",", ".")) : 1;
+    if (!(pomos > 0) || pomos > 24) return twiReply(res, "Ingresá una cantidad de pomodoros válida (ej: 1, 2, 1.5).");
+    try {
+      const { player, events } = await loadPlayer(phone);
+      const body = `⚔️ Misión cumplida: *${name}* (${fmtPomos(pomos)})\n\n${await earnPoints(player, "mision", pomosToPoints(pomos), name)}`;
+      return twiReply(res, withEvents(events, body));
+    } catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (["tienda", "recompensas", "premios"].includes(cmd)) {
+    try { return twiReply(res, await formatShop(phone)); }
+    catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (cmd.startsWith("canjear ") || cmd.startsWith("gastar ")) {
+    const n = parseInt(cmd.split(" ")[1]);
+    try {
+      const { player, events } = await loadPlayer(phone);
+      const reward = (await getRewards(phone))[n - 1];
+      if (!reward) return twiReply(res, withEvents(events, `No encontré la recompensa ${n}. Escribí *tienda* para verlas.`));
+      if (player.points < reward.cost) {
+        return twiReply(res, withEvents(events, `🔒 *${reward.name}* cuesta ${reward.cost} y tenés ${player.points}. Te faltan ${reward.cost - player.points} pts (~${fmtPomos(Math.ceil((reward.cost - player.points) / PUNTOS_POR_POMODORO))}). ¡Vos podés! 💪`));
+      }
+      player.points -= reward.cost;
+      await logPoints(phone, "canje", -reward.cost, reward.name);
+      await supabase.from("players").update({ points: player.points }).eq("phone", phone);
+      return twiReply(res, withEvents(events, `🎁 Canjeaste *${reward.name}* por ${reward.cost} pts.\n🪙 Te quedan ${player.points}.\n\n¡Disfrutalo sin culpa, te lo ganaste! ✨`));
+    } catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (cmd.startsWith("premio ")) {
+    const m = msg.replace(/^\S+\s*/, "").trim().match(/^(.+?)\s+(\d+)$/);
+    if (!m || parseInt(m[2]) <= 0) return twiReply(res, "Formato: *premio [nombre] [costo]*. Ej: *premio Ir al cine 150*");
+    try {
+      await getPlayer(phone);
+      await supabase.from("rewards").insert({ phone, name: m[1].slice(0, 200), cost: parseInt(m[2]) });
+      return twiReply(res, `🛒 Agregué *${m[1]}* a la tienda por ${parseInt(m[2])} pts.\n\nEscribí *tienda* para verla.`);
+    } catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (cmd.startsWith("quitar premio ")) {
+    const n = parseInt(cmd.split(" ")[2]);
+    try {
+      const reward = (await getRewards(phone))[n - 1];
+      if (!reward) return twiReply(res, `No encontré la recompensa ${n}. Escribí *tienda* para verlas.`);
+      await supabase.from("rewards").delete().eq("id", reward.id);
+      return twiReply(res, `🗑 Quité *${reward.name}* de la tienda.`);
+    } catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (cmd.startsWith("meta")) {
+    const n = parseInt(cmd.split(" ")[1]);
+    try {
+      const { player, events } = await loadPlayer(phone); // cierra los días anteriores con la meta vieja
+      if (!n || n <= 0) {
+        return twiReply(res, withEvents(events, `🎯 Tu meta diaria es *${player.daily_goal} pts* (~${fmtPomos(player.daily_goal / PUNTOS_POR_POMODORO)}).\n\nCambiala con *meta [N]*. Ej: *meta 60*`));
+      }
+      await supabase.from("players").update({ daily_goal: n }).eq("phone", phone);
+      return twiReply(res, withEvents(events, `🎯 Nueva meta diaria: *${n} pts* (~${fmtPomos(n / PUNTOS_POR_POMODORO)}).`));
+    } catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
+  }
+
+  if (cmd === "historial" || cmd === "movimientos") {
+    try { return twiReply(res, await formatHistory(phone)); }
+    catch (e) { console.error("Juego:", e.message); return twiReply(res, GAME_ERROR); }
   }
 
   if (cmd.startsWith("borrar ") || cmd.startsWith("eliminar ")) {
