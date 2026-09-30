@@ -4,7 +4,7 @@
 >
 > **Cómo usarlo:** pégalo como instrucción base / conocimiento del asistente (Codex, GPT personalizado, etc.). La IA debe seguir estas reglas en todo lo que genere.
 >
-> **Estado:** v1.2 · Última actualización: 2026-09-24
+> **Estado:** v2.0 · Última actualización: 2026-09-30
 > Las secciones marcadas con `[POR CONFIRMAR]` se completan en las siguientes rondas.
 
 ---
@@ -37,7 +37,21 @@ Alado es una **casa de arte usable**: lujo artesanal conceptual colombiano. No e
 
 **Propósito:** crear piezas hermosas e interesantes —arte usable— que conecten con la gente y le permitan **contar la historia que las inspiró**. No vender en masa: crear piezas con alma, pocas y significativas.
 
+**Manifiesto (en palabras de los fundadores):**
+> Alado quiere hacer del arte algo de todos los días. A través de la ropa podemos traer al mundo comercial todas esas historias colombianas que son tan interesantes. Queremos mirar a Colombia a los ojos, cargar ese legado cultural y elevarlo al nivel en el que las grandes marcas de moda están con el lujo. Queremos trabajar con artesanos y pagarles bien su trabajo, para que no olviden sus saberes ancestrales. Queremos darle magia a esas cosas, ponerle alma a lo que hacemos día a día — desde una estética que no es *trendy*, óptima, minimal ni pulida: es grande, floral, interesante, casi barroca; que recuerda las raíces y siempre las carga consigo. Queremos hacer piezas interesantes, piezas que cuentan historias y por las que la gente te reconoce, y nos reconoce.
+
+**Dos capas de estética (no confundir):**
+- **Estética creativa / del producto:** *grande, floral, interesante, casi barroca*, recargada de significado, con muchas capas — recuerda las raíces. **NO es minimal.**
+- **Identidad gráfica / de comunicación:** sobria y limpia (logo, web, tipografía), con la fotografía como protagonista. El minimalismo vive solo aquí, en cómo se comunica; nunca en el arte de las piezas.
+
 **El café y la identidad colombiana como ADN (permanente, no puntual):** las colecciones de Alado se inspiran una y otra vez en Colombia: su historia, su territorio, su flora y fauna, sus tradiciones, sus mujeres. El café y la cultura cafetera son parte central de ese universo, no un tema de una sola temporada.
+
+**Cómo nace una colección:** normalmente de **viajes a lugares de Colombia**. Ejemplos:
+- *Chapoleras* → del recorrido cafetero por el Eje Cafetero y las fincas de El Retiro.
+- *La República* → de los pueblos coloniales de Bogotá, Boyacá, Guaduas, Villa de Leyva, Ráquira…
+- *Tierradentro* → de una visita a Lorica, el hermoso pueblo colonial.
+
+**Referencias e inspiración:** las acuarelas de la **Comisión Corográfica**, las representaciones del momento de la **República**, las **expediciones de Humboldt**, las historias de Antioquia y sus pueblos, y todo lo antiguo. Alado también admira a los grandes de la moda por su **historia y maestría**: Dior, Vivienne Westwood, Loewe, Marc Jacobs.
 
 ---
 
@@ -54,7 +68,14 @@ Línea que funciona de forma independiente. Alta costura de celebración, servic
 ### Línea 2 · Alado (línea principal)
 Ropa de **alta gama**, usable pero muy **conceptual**. 2 colecciones al año.
 - **Inspiración:** la historia de Colombia, el territorio, la flora y fauna, la independencia, la Virgen del Carmen, las mujeres, la cultura cafetera.
-- **Colecciones referenciadas:** La Aurora (homenaje a la identidad cafetera / chapoleras, 2026), Equestrian, Horizontes (2023), una voz por el Amazonas (2022), y una colección inspirada en el barro y las esculturas precolombinas. `[POR CONFIRMAR nombres/años exactos si quieres listarlos todos]`
+- **Trayectoria y reconocimientos (pasarelas):**
+  - Colombiamoda 2026 · *Chapoleras* — colaboración con **KIA** (identidad cafetera).
+  - Bogotá Fashion Week 2025 · *La República*.
+  - Colombiamoda 2025 · *Bronzini x Alado*.
+  - Bogotá Fashion Week 2024 · *Tierradentro*.
+  - Colombiamoda 2023 · *Horizontes*.
+  - Colombiamoda 2022 · *una voz por el Amazonas*.
+  - Otras colecciones del universo: *La Provincia, La Alquimista, Primavera, Terracota, Perihelio, Equestrian*, y una inspirada en el barro y las esculturas precolombinas.
 - **Producto:** kimonos, faldas, vestidos, camisas, pantalones, vests, ponchos, zapatos, pañuelos.
 - **Técnicas:** bordado y sublimación. Los patrones se **pintan a mano** por Andrés y Alejo, se escanean, se digitalizan y se vuelven patrón. Piezas únicas, pocas unidades, elegantes; algunas para el día a día.
 - **Canales:** tienda física en El Retiro y web (aladogroup.com).
@@ -64,6 +85,21 @@ Línea de **diseño de hogar** desprendida del trabajo artesanal de Alado. Varia
 - "Objetos únicos para gente única". Todo muy hecho a mano, vintage, pintado a mano, ornamental, artesanal, en pocas unidades.
 - **Incluye:** textil hogar (sublimado o serigrafía), bordados y apliques, lámparas, candelabros, floreros, jarrones, vidrio, cerámica, apagavelas, cobijas, caminos de mesa en fibra, lámparas de techo, collares, aretes, pulseras, figuras en yeso montadas en estandartes como obras de arte, muebles vintage, cerámicas para colgar en la pared.
 - **Imaginería religiosa:** Alado no es religiosa, pero toma prestada la imagen religiosa y vende vírgenes en la tienda, especialmente alrededor de Semana Santa.
+
+### Artesanos y técnicas (corazón del ADN)
+Alado trabaja con **varios artesanos y comunidades** de Colombia, en relaciones de **~12 años**. Cada técnica viene de un saber y un territorio:
+- **Bordado a mano** en hilos de colores (sobre todo ropa y textil hogar).
+- **Molas** con la comunidad **Tule Kuna de Turbo**.
+- **Cestería** de iraca, ratán, bejuco y pajas teteras.
+- **Fique** en **San Vicente Ferrer**.
+- **Piezas en madera talladas** del **Amazonas**.
+- **Tejido Wayuu** en **La Guajira**.
+- Antioquia es "mágica" con el producto artesanal: Alado conoce, pueblo por pueblo, una técnica distinta.
+
+**Todo es profundamente manual:** el **corte se hace a mano**; hay **bordado industrial** que da acabados perfectos, pero la **acomodación de las piezas siempre es manual**. Las piezas son muy elaboradas desde la confección: vestidos complejos, **almas, muchas capas**, bordados, detalles en **crochet**. A veces **telas viejas de mantel bordadas** se convierten en camisas (todo un trabajo de moldería). Las piezas de hogar también se hacen a mano en el taller: el yeso se compra o se manda a hacer, se pinta, y todo lleva trabajo manual y una maestría enorme.
+
+### Sostenibilidad (consecuencia del oficio, no eslogan)
+Alado produce **muy pocos desperdicios**. Al hacer el corte y los procesos **a mano**, se reutiliza casi todo. Desde el diseño se usan **materiales nobles** de la forma más eficiente posible, pensando en el **producto final** (no en producir en masa) y en cómo lograrlo aprovechando al máximo los recursos. *No se comunica como "moda sostenible" de tendencia: es el resultado natural de trabajar despacio y a mano.*
 
 ---
 
@@ -202,11 +238,13 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ## 9. Identidad visual *(para dar lineamientos coherentes)*
 
-**Estética general:** minimalista con alma de **collage vintage**, muy *luxury*. Elegante, sobria, con detalles hechos a mano. **La fuerza está en la fotografía**, no en los gráficos ni los vectores: primero la imagen, luego un tratamiento mínimo.
+> ⚠️ **Importante:** aquí se describe la **identidad gráfica y de comunicación** (sobria, minimal). La **estética del producto** es lo contrario: grande, floral, casi barroca (ver sección 2, "Dos capas de estética"). No confundir.
+
+**Identidad gráfica de comunicación:** minimalista con alma de **collage vintage**, muy *luxury*. Elegante, sobria, con detalles hechos a mano. **La fuerza está en la fotografía**, no en los gráficos ni los vectores: primero la imagen, luego un tratamiento mínimo.
 
 **Recursos gráficos:** muchos **elementos pintados a mano** y fotografía. Los gráficos/vectores se usan poco y de forma muy discreta.
 
-**Motivos recurrentes (sello de Alado):** coronas de laurel, abejas y estrellas (imaginería clásica/heráldica que refuerza el aire de época). `[Sara subirá imágenes de referencia de estos motivos]`
+**Motivos recurrentes (sello de Alado):** **abejas**, **coronas de laurel**, **estrellas**, **moños**, **bordes y cenefas** — imaginería clásica/heráldica que refuerza el aire de época. `[Sara subirá imágenes de referencia de estos motivos]`
 
 **Logo:** wordmark "Alado" en sans-serif **bold y pesado**, negro. Fuerte, contemporáneo y seguro.
 
@@ -219,6 +257,8 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 - `[POR CONFIRMAR códigos hex exactos]`
 
 **Fotografía:** editorial y pictórica, romántica y natural. Fondos de naturaleza/bosque en verdes apagados, texturas (tul, telas), maquillaje natural rosado. Aire de pintura y de época.
+
+**Identidad sonora (para reels y video):** el mundo de Alado suena a **jazz, tango e instrumental** (base: el playlist de Andrés en Spotify). **Nunca** música de tendencia ni audios virales.
 
 **Referencias de estética/nivel (el "vecindario" luxury de Alado):** Johanna Ortiz, Lotto del Sur, Jorge Duque. Marcas de lujo con identidad, oficio y sello propio — nunca lujo genérico "solo caro".
 
@@ -242,6 +282,20 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 **Pilares de contenido:** producto/colección · lo artesanal y el proceso (patrones a mano, artesanos) · la tienda + El Retiro · marca/aspiracional (Colombia, historia, oficio).
 
+**Insight de contenido (por inventario corto):** con pocas unidades por referencia y sin pauta, **no se vende el SKU, se vende el mundo**. El contenido enamora de la colección, el oficio y la marca; la pieza puntual es el pretexto, no el foco.
+
+### Producción de contenido (operativo)
+- **Formato estrella:** los **reels** son lo que mejor funciona.
+- **Cadencia realista:** ~**1 publicación por semana** (Sara produce sola, con Andrés como curador de contenido; graba con celular y también toma fotos profesionales).
+- **Lugares para grabar:**
+  - **El taller** (Medellín): increíble, con fondos de colores, telas, cortinas, muebles viejos y gente confeccionando. *Luz mala → usar luz artificial.*
+  - **La casa de Andrés y Alejo en El Retiro:** "todo es Alado" (aura), hermosa, grande, con vivero, plantas, antigüedades, sala y mesas. Siempre lista, pero **a 1 hora → agendar**.
+  - **Taller de cerámica / pintado a mano:** se puede grabar.
+  - **La tienda de El Retiro:** hermosa, con todos los productos exhibidos.
+  - **Talleres de artesanos y locaciones externas:** se agendan según la colección.
+  - **Bride:** el atelier es bonito pero de luz difícil, y **las novias no quieren que las graben ni mostrar el vestido antes del reveal** → usar las **fotos de fotógrafo** que envían después.
+- **Los fundadores en cámara:** funcionan y a la gente le gusta verlos, pero **no les gusta hablar** (se ponen nerviosos). Solución: usarlos **sin performance** — manos trabajando, decidiendo, pintando; voz en off o texto encima. Presencia, no discurso.
+
 ---
 
 ## 11. Qué NUNCA debe hacer la IA (límites)
@@ -257,6 +311,12 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 - Política explícita.
 - Tendencias y cualquier cosa asociada al *fast fashion*.
 - El lujo tradicional "que solo es caro": Alado no es eso. Alado es **lujo local, lujo artesanal** — lujo por oficio, historia y significado, no por precio ni estatus.
+
+**Qué NO es Alado (anti-marca):**
+- No es *trendy* ni *girly* per se.
+- No es rápida, ni masiva, ni de consumo rápido.
+- No es *fast fashion* ni "digerible".
+- No es minimal/pulida en su arte (eso es solo su comunicación gráfica).
 
 ---
 
@@ -283,4 +343,4 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ---
 
-*v1.0 — documento base completo. Pendientes menores para pulir: códigos hex exactos, nombres de las tipografías, e imágenes de los motivos (coronas de laurel, abejas, estrellas).*
+*v2.0 — ADN completo (artesanos, trayectoria, manifiesto, referencias, sostenibilidad, producción de contenido). Pendientes menores: estructura de compra / recorrido de venta, códigos hex y tipografías exactas, imágenes de los motivos, y vetar la lista de palabras "que ama" Alado.*
