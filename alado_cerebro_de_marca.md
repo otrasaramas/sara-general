@@ -4,7 +4,7 @@
 >
 > **Cómo usarlo:** pégalo como instrucción base / conocimiento del asistente (Codex, GPT personalizado, etc.). La IA debe seguir estas reglas en todo lo que genere.
 >
-> **Estado:** v2.0 · Última actualización: 2026-09-30
+> **Estado:** v2.1 · Última actualización: 2026-09-30
 > Las secciones marcadas con `[POR CONFIRMAR]` se completan en las siguientes rondas.
 
 ---
@@ -298,6 +298,35 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ---
 
+## 10.b Ecosistema digital y recorrido de venta
+
+*(Integrado del "Ecosistema Alado". Resuelve la pregunta de estructura de compra.)*
+
+**Canales y su función:**
+- **Instagram** → canal principal: *world-building*, descubrimiento e interacción.
+- **Facebook** → distribución secundaria del contenido de Instagram.
+- **Web (Shopify · aladogroup.com)** → fichas de producto, historia de las piezas, compra; principal fuente de datos de venta.
+- **WhatsApp** → conversación, asesoría y **cierre de muchas ventas**.
+- **Google Business** → descubrimiento local.
+- **Tienda física (El Retiro)** → experiencia y venta presencial; mucho de Alado & Co. solo está aquí.
+- **Eventos / pasarelas** (Colombiamoda, BFW) → momento cumbre y generación de interés.
+- **Email** (propuesto) → relación con permiso, sin envíos masivos.
+
+**Recorrido de compra actual:**
+> Instagram → DM / WhatsApp → pregunta → asesoría → **compra** (en web, WhatsApp o tienda).
+
+**Zona opaca (el problema a resolver):** hoy no se sabe qué pasó con quien **preguntó y no compró**, **visitó la web y no compró**, o **interactuó sin avanzar**. Ese aprendizaje se pierde. → Cada lead debería quedar registrado (aunque sea de forma simple) y recibir un seguimiento puntual y respetuoso.
+
+**Herramientas:**
+- **Actuales:** Adobe, Canva, Google Drive, Excel (creación); Instagram, Facebook, Shopify, WhatsApp, Google Business (distribución/venta).
+- **Propuestas (ecosistema ideal):** Claude/ChatGPT y Firefly (apoyo creativo), Notion (calendario/dossier), Make o Zapier (automatización), HubSpot (CRM), Looker Studio (dashboard), Mailchimp/Klaviyo (email). *Ninguna reemplaza el criterio humano.*
+
+**Ciclo que no termina en la venta:** contenido → ventas → clientes → comentarios → datos → análisis (IA + humano) → **aprendizajes** → vuelven al diseño de la siguiente colección.
+
+**Producción:** ~20 referencias por colección, 2 colecciones al año. Pocas unidades por referencia → *vender el mundo, no el SKU*.
+
+---
+
 ## 11. Qué NUNCA debe hacer la IA (límites)
 
 - No usar lenguaje comercial agresivo, urgencia ni "descuento/sale".
@@ -343,4 +372,4 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ---
 
-*v2.0 — ADN completo (artesanos, trayectoria, manifiesto, referencias, sostenibilidad, producción de contenido). Pendientes menores: estructura de compra / recorrido de venta, códigos hex y tipografías exactas, imágenes de los motivos, y vetar la lista de palabras "que ama" Alado.*
+*v2.1 — ADN + ecosistema digital y recorrido de venta integrados (del artifact "Ecosistema Alado"). Documento listo para exportar. Pendientes menores solo de pulido: códigos hex y tipografías exactas, imágenes de los motivos, y vetar la lista de palabras "que ama" Alado.*
