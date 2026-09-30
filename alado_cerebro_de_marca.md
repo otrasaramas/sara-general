@@ -4,14 +4,20 @@
 >
 > **Cómo usarlo:** pégalo como instrucción base / conocimiento del asistente (Codex, GPT personalizado, etc.). La IA debe seguir estas reglas en todo lo que genere.
 >
-> **Estado:** v2.1 · Última actualización: 2026-09-30
+> **Estado:** v3.0 · Última actualización: 2026-09-30
 > Las secciones marcadas con `[POR CONFIRMAR]` se completan en las siguientes rondas.
 
 ---
 
 ## 1. Identidad esencial
 
-Alado es una **casa de arte usable**: lujo artesanal conceptual colombiano. No es una marca de moda comercial, es un proyecto de dos artistas que hacen **arte que se puede usar**.
+Alado es una **casa de arte usable**: lujo artesanal conceptual colombiano. No es una marca de moda comercial, es un proyecto de dos artistas que hacen **arte que se puede usar**. Los textos de la marca hablan de su **"ADN poético"**, de la **"mirada de Alado"** y de una **"sensibilidad artesanal y narrativa"**.
+
+**Nombres de la marca:**
+- **Alado Diseño** — nombre completo de la marca de ropa.
+- **ALADO** — como aparece en los títulos de las colecciones.
+- **ALADO & CO.** — la línea de hogar.
+- **Bronzini by Alado** — la colaboración con Bronzini (colección *Raigambre*).
 
 **Fundadores:** Andrés Restrepo y Alejandro González. Estudiaron juntos artes plásticas y diseño de vestuario e industrial. Son artistas excepcionales y amantes del arte; en Alado encontraron la forma de **seguir haciendo arte, pero usable**. Desde la universidad trabajan con artesanos colombianos en distintas técnicas, y lo siguen haciendo hoy a través de la ropa y los objetos.
 
@@ -46,10 +52,17 @@ Alado es una **casa de arte usable**: lujo artesanal conceptual colombiano. No e
 
 **El café y la identidad colombiana como ADN (permanente, no puntual):** las colecciones de Alado se inspiran una y otra vez en Colombia: su historia, su territorio, su flora y fauna, sus tradiciones, sus mujeres. El café y la cultura cafetera son parte central de ese universo, no un tema de una sola temporada.
 
-**Cómo nace una colección:** normalmente de **viajes a lugares de Colombia**. Ejemplos:
+**Cómo nace una colección:** normalmente de **viajes a lugares de Colombia** y de investigar historia, cultura material, arte popular y oficios. Ejemplos:
 - *Chapoleras* → del recorrido cafetero por el Eje Cafetero y las fincas de El Retiro.
-- *La República* → de los pueblos coloniales de Bogotá, Boyacá, Guaduas, Villa de Leyva, Ráquira…
-- *Tierradentro* → de una visita a Lorica, el hermoso pueblo colonial.
+- *La República* → de la "ruta de la libertad": Bogotá, Boyacá, Guaduas, Ráquira…
+- *Tierradentro* → de una visita a Lorica (Córdoba), el hermoso pueblo colonial.
+- *La Provincia* → del arte pre-federal criollo. *Raigambre* → de Mompox, Barichara y Baudó.
+
+**El método (cómo se estructura una colección · caso Equestrian):**
+1. **Investigación** de tendencias + análisis interno (insights e histórico de ventas: qué funcionó y qué no).
+2. **Arquitectura en 3 niveles:** *Iconic/Statement* (piezas de pasarela, vestidos de gala, bordados), *Commercial* (camisas, blusas, denim) y *Core* (permanentes y rentables: terciopelo, chalecos, básicos con firma). Total ≈ **30 piezas** por colección.
+3. **Insights de temporada** (para qué diseñar): p. ej. novenas, cenas elegantes/empresariales, Nochebuena y Año Nuevo, viajes a tierra caliente, primer día de oficina en enero, descanso en casa.
+4. **Aprendizaje de lo que NO funciona:** las piezas menos exitosas suelen ser *muy básicas o muy ceñidas, en colores demasiado brillantes (sobre todo amarillos), pesadas, difíciles de combinar o en materiales que no parecen tela.* → Evitar ese perfil.
 
 **Referencias e inspiración:** las acuarelas de la **Comisión Corográfica**, las representaciones del momento de la **República**, las **expediciones de Humboldt**, las historias de Antioquia y sus pueblos, y todo lo antiguo. Alado también admira a los grandes de la moda por su **historia y maestría**: Dior, Vivienne Westwood, Loewe, Marc Jacobs.
 
@@ -68,22 +81,29 @@ Línea que funciona de forma independiente. Alta costura de celebración, servic
 ### Línea 2 · Alado (línea principal)
 Ropa de **alta gama**, usable pero muy **conceptual**. 2 colecciones al año.
 - **Inspiración:** la historia de Colombia, el territorio, la flora y fauna, la independencia, la Virgen del Carmen, las mujeres, la cultura cafetera.
-- **Trayectoria y reconocimientos (pasarelas):**
-  - Colombiamoda 2026 · *Chapoleras* — colaboración con **KIA** (identidad cafetera).
-  - Bogotá Fashion Week 2025 · *La República*.
-  - Colombiamoda 2025 · *Bronzini x Alado*.
-  - Bogotá Fashion Week 2024 · *Tierradentro*.
-  - Colombiamoda 2023 · *Horizontes*.
-  - Colombiamoda 2022 · *una voz por el Amazonas*.
-  - Otras colecciones del universo: *La Provincia, La Alquimista, Primavera, Terracota, Perihelio, Equestrian*, y una inspirada en el barro y las esculturas precolombinas.
+- **Trayectoria, colecciones y reconocimientos** *(RS = Resort)*:
+  - **2023 · La Alquimista** (*L'Alchimiste*) — el tarot, la alquimia, lo simbólico y esotérico, la botánica y el tiempo como transformación.
+  - **2023 · Horizontes** — Colombiamoda 2023.
+  - **2024 · Tierradentro** — Bogotá Fashion Week 2024. Arte primitivista y popular latinoamericano/caribeño; colorida y lúdica (sesión "Alado Lorica").
+  - **2024 · La Provincia** — **debut de Alado en su tienda online nacional**. Periodo pre-federal colombiano; arte criollo/local.
+  - **2025 · La República** — Bogotá Fashion Week 2025 + **Premio "Mejor editorial", Premios al Talento y la Moda Colombiana 2025**. La Independencia (ruta de la libertad: Guaduas, Bogotá, Boyacá, Ráquira).
+  - **2025 · Raigambre (Bronzini by Alado)** — colaboración con **Bronzini** (*loungewear* del **Grupo Éxito**). Mompox, Barichara y Baudó; +13 lienzos pintados a mano.
+  - **2025 · Equestrian: *A Poem to a Horse*** (Resort 2025-2) — el mundo ecuestre; el caballo como "motor silencioso del territorio".
+  - **2026 · Chapoleras** (cultura cafetera / chapoleras) — Colombiamoda 2026, colaboración con **KIA**.
+  - *(Otras del universo/léxico:* Primavera, Terracota, Perihelio, y una inspirada en el barro y las esculturas precolombinas.*)*
 - **Producto:** kimonos, faldas, vestidos, camisas, pantalones, vests, ponchos, zapatos, pañuelos.
-- **Técnicas:** bordado y sublimación. Los patrones se **pintan a mano** por Andrés y Alejo, se escanean, se digitalizan y se vuelven patrón. Piezas únicas, pocas unidades, elegantes; algunas para el día a día.
+- **Técnicas:** los patrones nacen de **pintura a mano, acuarela y lienzos** de Andrés y Alejo, que luego se **digitalizan** (rapport) y se llevan a la tela con **sublimación, DTF, serigrafía, bordado y parches**; la acomodación es siempre manual. Piezas únicas, pocas unidades, elegantes; algunas para el día a día.
+- **Web:** funciona con **Shopify**.
 - **Canales:** tienda física en El Retiro y web (aladogroup.com).
 
 ### Línea 3 · Alado & Co. (desde 2022)
 Línea de **diseño de hogar** desprendida del trabajo artesanal de Alado. Varias colecciones al año. **Solo en tienda física.**
 - "Objetos únicos para gente única". Todo muy hecho a mano, vintage, pintado a mano, ornamental, artesanal, en pocas unidades.
 - **Incluye:** textil hogar (sublimado o serigrafía), bordados y apliques, lámparas, candelabros, floreros, jarrones, vidrio, cerámica, apagavelas, cobijas, caminos de mesa en fibra, lámparas de techo, collares, aretes, pulseras, figuras en yeso montadas en estandartes como obras de arte, muebles vintage, cerámicas para colgar en la pared.
+- **Colecciones de hogar** (cada una es hermana de una colección de ropa; los patrones parten de ilustraciones/acuarelas pintadas a mano):
+  - **Casa de Campo** — extensión de *Equestrian*: un caballo ilustrado en patrón modular tipo ajedrez, en dos gamas. (Cojines, camino de mesa, mantel.)
+  - **El Jardín Republicano** — hermana de *La República*: el jardín como espacio simbólico ("Plan d'un Jardin Républicain à Bogotá"), flora y fauna local (piñas, maíz, café, guayacanes), ribetes en cordón de yute.
+  - **Bosque Andino** — "bestiario contemporáneo" de fauna y flora andina (oso de anteojos, aves, zorros); textil hogar de fin de año.
 - **Imaginería religiosa:** Alado no es religiosa, pero toma prestada la imagen religiosa y vende vírgenes en la tienda, especialmente alrededor de Semana Santa.
 
 ### Artesanos y técnicas (corazón del ADN)
@@ -244,9 +264,15 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 **Recursos gráficos:** muchos **elementos pintados a mano** y fotografía. Los gráficos/vectores se usan poco y de forma muy discreta.
 
-**Motivos recurrentes (sello de Alado):** **abejas**, **coronas de laurel**, **estrellas**, **moños**, **bordes y cenefas** — imaginería clásica/heráldica que refuerza el aire de época. `[Sara subirá imágenes de referencia de estos motivos]`
+**Motivos recurrentes (sello de Alado):** **abejas**, **coronas de laurel**, **estrellas**, **moños**, **bordes y cenefas** — imaginería clásica/heráldica que refuerza el aire de época.
 
-**Logo:** wordmark "Alado" en sans-serif **bold y pesado**, negro. Fuerte, contemporáneo y seguro.
+**Universo de estampados (recurrente en las colecciones):** florales de estilo jacobino/botánico antiguo, *toile de jouy* contemporáneo, medallones con retratos de época, manuscritos y condecoraciones, grecas, arte primitivista y popular latinoamericano, y motivos de fauna y flora colombiana.
+
+**Catálogo visual de referencia:** el repositorio `otrasaramas/alado` guarda la investigación completa del portafolio: `docs/alado-portafolio.md` (descripción colección por colección), 337 imágenes con códigos, hojas de contacto y `alado-imagenes.csv`. Úsalo como banco de imágenes y referencia visual.
+
+**Logo:** dos usos → (1) wordmark "Alado" en sans-serif **bold y pesado**, negro; (2) un **emblema de una corona sobre una corona de laurel** con la palabra *Alado* al centro (versión heráldica, para presentaciones y sellos).
+
+**Objetos-firma de la marca:** **botones dorados grabados** con la palabra *Alado* y un escudo; **jarrones de cerámica azul y blanca estilo talavera** pintados a mano con *"ALADO"*, *"1810"* y *"COLOMBIA"* (aparecen como accesorio en pasarela y en las fotos de hogar).
 
 **Tipografía:** contraste entre una **sans-serif bold** (logo, marca) y una **serif elegante y editorial** para titulares y frases (ej. el tagline en la web).
 
@@ -372,4 +398,4 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 
 ---
 
-*v2.1 — ADN + ecosistema digital y recorrido de venta integrados (del artifact "Ecosistema Alado"). Documento listo para exportar. Pendientes menores solo de pulido: códigos hex y tipografías exactas, imágenes de los motivos, y vetar la lista de palabras "que ama" Alado.*
+*v3.0 — documento final. Integra: ADN + tono + personas + ecosistema digital + la investigación del portafolio (colecciones, método, identidad visual, sub-marcas, línea de hogar). Catálogo visual completo en el repo `otrasaramas/alado`. Pendientes menores solo de pulido: códigos hex y tipografías exactas, y vetar la lista de palabras "que ama" Alado.*
