@@ -40,6 +40,25 @@ Y creo que esto choca un poco con Tolle, y al mismo tiempo no, porque Lain, Tony
 - **Identidad:** "no soy mi identidad pasada" (Tolle) vs. "cambia tu identidad para cambiar tu vida" (Robbins, Alexa, Lain). ¿Se puede soltar una identidad y a la vez elegir una nueva?
 - **Qué es "lo real":** Tolle habla de un ser imperturbable dentro; Un curso de milagros dice que el mundo exterior es proyección de la mente. Parecen decir lo mismo, pero no es igual de radical.
 
+## Lo que entiendo / lo que no entiendo
+
+- Entiendo: la idea del observador de Tolle y cómo se conecta con hacer las cosas con atención.
+- No entiendo o me falta: Un curso de milagros (lo he leído muy poco), el budismo (solo lo básico de internet), cómo distinguir una meta que nace del ser de una que nace de la carencia.
+
+## Fact check
+
+| Afirmación | Estado | Nota |
+|---|---|---|
+| Tolle: la mente no soy yo, soy el observador; cuerpo del dolor | verificado | Fiel a *El poder del ahora*. |
+| Cardone *La regla 10x*; Lain García Calvo *La voz de tu alma*; Cameron *El camino del artista* | verificado | |
+| Rick Rubin, "El arte de crear" | con matiz | Creo que en español es *El acto creativo: una forma de ser*. Confirmar. |
+| Dicho budista: recoger agua y sembrar arroz | con matiz | La versión conocida es "cortar leña y acarrear agua" (zen). La de sembrar arroz no la ubico. |
+| Jung: "conciencia universal" | con matiz | Jung habla de inconsciente colectivo y arquetipos, no exactamente de Dios o conciencia universal. |
+| Sistema reticular filtra la realidad según tus metas | con matiz | El sistema reticular existe (atención, vigilia). La versión popular es una metáfora, no ciencia establecida. |
+| "Como es arriba es abajo / adentro es afuera" | con matiz | Es hermetismo, no Tolle. *Un curso de milagros* es más radical (el mundo es proyección). |
+| Budismo y el "ser imperturbable" | con matiz | Eso se parece más al Advaita. Muchas escuelas budistas niegan un yo permanente (*anatta*). |
+| Tolle sobre acción desde la presencia | verificado | *Una nueva Tierra*: aceptación, disfrute, entusiasmo. |
+
 ## Fuentes que menciono
 
 Grant Cardone (*La regla 10x*), Lain García Calvo (*La voz de tu alma*), Tony Robbins, Eckhart Tolle (*El poder del ahora*), Julia Cameron (*El camino del artista*), *Un curso de milagros*, Rick Rubin (*El arte de crear*), Carl Jung, mentoría de Alexa, tradición budista (agua y arroz).

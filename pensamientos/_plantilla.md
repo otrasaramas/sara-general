@@ -17,3 +17,14 @@ El pensamiento, en mis palabras.
 ## Tensiones o contradicciones
 
 -
+
+## Lo que entiendo / lo que no entiendo
+
+- Entiendo:
+- No entiendo o me falta:
+
+## Fact check
+
+| Afirmación | Estado | Nota / fuente |
+|---|---|---|
+| | verificado / con matiz / no verificado / incorrecto | |

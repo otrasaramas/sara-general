@@ -26,5 +26,8 @@ _(todavía ninguno: esperamos que se repitan en varias entradas)_
 - Soltar la identidad vs. cambiarla.
 - Ser imperturbable (Tolle) vs. mundo como proyección (Un curso de milagros).
 
+## Huecos y por profundizar
+Ver [huecos.md](huecos.md).
+
 ## Entradas
 - 2026-11-25 · [Todo esto está conectado: presencia y meta pueden convivir](entradas/2026-11-25-todo-conecta-presencia-y-meta.md)
